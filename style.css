@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: "Montserrat";
     src: url("fonts/Montserrat-Regular.ttf");
@@ -292,4 +293,300 @@ body {
     white-space: pre;
     font-size: 32px;
 }
+=======
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+    
+}
+body {
+    background-color: #0a0a0a;
+    color: #e6e1de;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    
+}
+
+p {
+    font-size: 20px;
+}
+.message {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #810100;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+button {
+    background-color: #810100;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 99px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #b00000;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #810100;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.circle {
+    width: 1800px;
+    height: 1200px;
+    background-color: #490000fd;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero h1,
+.hero p,
+.hero button {
+    position: relative;
+    z-index: 2;
+}
+.about {
+    min-height: 100vh;
+    background-color: #e6e1de;
+    color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 500px;
+    border-radius: 50%;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-text {
+    width: 420px;
+    text-align: left;
+}
+
+.about-text h3 {
+    font-size: 80px;
+    margin: 10px 0 20px;
+    line-height: 1;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-text small {
+    display: block;
+    margin-top: 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.about-text span {
+    font-size: 14px;
+    letter-spacing: 0px;
+    display: inline-block;
+    border-bottom: 1px solid #810100;
+    padding-bottom: 15px;
+}
+.about-line {
+    width: 100%;
+    height: 1px;
+    background-color: #810100;
+    margin-top: 30px;
+}   
+.video-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.video-section h2 {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.social-links {
+    position: absolute;
+    z-index: 10;
+    top: calc(50% + 80px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 25px;
+    border-radius: 99px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.social-links a:hover {
+    background-color: white;
+    color: #0a0a0a;
+}
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 50px;
+    }
+    .circle {
+    width: 700px;
+    height: 500px;
+}
+.about-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 30px;
+}
+
+.about img {
+    width: 240px;
+    max-width: 100%;
+    display: block;
+}
+
+.about-text {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+}
+.hero {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 50px;
+    max-width: 100%;
+}
+
+.hero p {
+    font-size: 16px;
+    max-width: 90%;
+}
+
+.hero button {
+    padding: 16px 30px;
+    font-size: 16px;
+}
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .about-content {
+        display: flex !important;
+        flex-direction: column !important;
+        position: static !important;
+        transform: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        padding: 20px;
+        gap: 30px;  
+    }
+    .video-section h2 {
+    font-size: 0;
+    width: 90%;
+}
+
+.video-section h2::after {
+    content: "WELCOME\A TO MY WORLD";
+    white-space: pre;
+    font-size: 32px;
+}
+>>>>>>> ba2db3ba39277c2851eb504f4b5dc7d7af21b044
 }
